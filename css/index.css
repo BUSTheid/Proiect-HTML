@@ -1,0 +1,10 @@
+#landing {
+  background-image: url("../images/index/landing.jpg");
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

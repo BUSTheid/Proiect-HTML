@@ -1,0 +1,37 @@
+.titlu-asistenta {
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.info-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cic1 {
+  width: 59%;
+}
+
+.cic2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titlu-cic2 {
+  width: 100%;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.cic2-contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.cic2-cum-ajung-item {
+  display: flex;
+  flex-direction: column;
+}

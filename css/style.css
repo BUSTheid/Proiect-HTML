@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  min-height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+#header_links {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  size: auto;
+}
+
+#login_button {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.login {
+  color: black;
+  font-weight: bold;
+}
+
+.header_link {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.under-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0% 15%;
+  background-color: #29054d;
+}
+
+#anunt_showroom {
+  background-color: #170c22;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#logo_image {
+  height: 100px;
+  margin: 20px;
+}
+
+#search_bar {
+  width: 92%;
+  height: 40px;
+  background-color: white;
+  border: 0;
+}
+
+.telefon-deschis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.center-column {
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  background-color: #0a080d;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.col-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 25%;
+  font-size: 15px;
+}
+
+.col-footer-item {
+  display: flex;
+  align-items: center;
+}
