@@ -1,0 +1,59 @@
+.center-column-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.center-column-row-element {
+  width: 100%;
+}
+
+.titlu-produs {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtitlu-produs {
+  font-size: 15px;
+}
+
+.container-imagine-brand {
+  width: auto;
+}
+
+.imagine-brand {
+  height: 50px;
+}
+
+.descriere-produs,
+.container-meniu-comanda {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.meniu-comanda {
+  padding: 10px 20px;
+  background-color: rgb(247, 247, 247);
+}
+
+.info-garantii {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.button-comanda {
+  height: 50px;
+  width: 90%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  border-radius: 87px;
+}
+
+.button-comanda:after {
+  background: rgb(0, 0, 0);
+}
