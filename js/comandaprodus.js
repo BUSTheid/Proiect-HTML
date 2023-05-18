@@ -43,7 +43,7 @@ comandaButton.addEventListener("click", function (event) {
     return;
   }
 
-  let message = `Multumim, ${nume}! Ati cumparat ${cantitate}x ${produs}.`;
+  let message = `Multumim, ${nume}! Ati comandat ${cantitate}x ${produs}.`;
 
   if (livrareSelected) {
     message += ` Comanda va fi livrata la ${adresa} in cel mai scurt timp posibil.`;
