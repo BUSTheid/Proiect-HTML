@@ -20,7 +20,6 @@ ridicareRadio.addEventListener("change", function () {
   }
 });
 
-// Remove the event listener from the comandaButton
 function handleFormSubmission(event) {
   event.preventDefault();
 
@@ -31,7 +30,6 @@ function handleFormSubmission(event) {
   const livrareSelected = livrareRadio.checked;
   const adresa = adresaInput.value;
 
-  // Validate form fields
   if (
     cantitate === "" ||
     nume === "" ||
@@ -43,28 +41,22 @@ function handleFormSubmission(event) {
     return;
   }
 
-  // Determine the delivery method
   let deliveryMethod = "Livrare la adresa";
   if (!livrareSelected) {
     deliveryMethod = "Ridicare la showroom";
   }
 
-  // Construct the order details message
   let orderDetailsMessage = `Detalii comanda: Produs - ${produs}, Cantitate - ${cantitate}, Nume - ${nume}, Telefon - ${telefon},`;
 
-  // Add the delivery method or showroom information to the message
   if (livrareSelected) {
     orderDetailsMessage += ` Adresa - ${adresa}`;
   } else {
     orderDetailsMessage += " Va rugam sa veniti la showroom pentru ridicare.";
   }
 
-  // Display the order details message
   alert(orderDetailsMessage);
 
-  // Submit the form programmatically
   event.target.form.submit();
 }
 
-// Add the event listener to the comandaButton
 comandaButton.addEventListener("click", handleFormSubmission);
