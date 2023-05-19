@@ -29,7 +29,7 @@
     </ul>
     <div id="login_button">
       <a class="login" href="../../login.html">
-        Autentificare | Creeaza Cont
+        Contul Meu
       </a>
   </header>
   <div class="under-header">
@@ -38,7 +38,7 @@
     </a>
     <div style="width:50%; display:flex; justify-content: space-around">
       <input id="search_bar" type="text" placeholder="Cauta un produs">
-      <button type="submit"
+      <button id="buton_search" type="submit"
         style="height:40px; width:40px; display:flex; justify-content:center; align-items:center"><span
           class="material-icons md-48">
           search
@@ -83,6 +83,7 @@
         <br>
         <p><strong>Unitate de vanzare: bucata</strong></p>
       </div>
+
       <div class="center-column-row-element container-meniu-comanda">
         <div class="meniu-comanda">
           <p style="font-size:13px">Pret de vanzare (TVA inclus):</p>
@@ -94,7 +95,8 @@
           <p>Timpul de livrare se va stabili in functie de disponibilitatea stocului. Veti fi contactat dupa comanda
             pentru a clarifica toate detaliile.</p>
           <br>
-          <form>
+          <form action="../../../php/procesare_comanda.php" method="POST">
+            <input type="hidden" id="cod_produs" name="cod_produs" value="NS-025582">
             <label for="cantitate">Cantitate:</label>
             <input type="number" id="cantitate" name="cantitate" min="1" max="10" value="1">
             <br>
@@ -114,7 +116,7 @@
             <br>
             <br>
             <div style="display:flex; justify-content:center; height:70px; align-items:center;">
-              <button class="glow-on-hover button-comanda">Trimite comanda</button>
+              <button class="glow-on-hover button-comanda" type="submit">Trimite comanda</button>
             </div>
           </form>
         </div>
@@ -132,19 +134,19 @@
       <hr>
       <ul>
         <li>
-          <a href="../../contact.html">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
         <li>
-          <a href="../../despre_noi.html">Despre Noi</a>
+          <a href="despre_noi.html">Despre Noi</a>
         <li>
-          <a href="../../modalitati_plata.html">Modalitati Plata</a>
+          <p>Cash/Card la livrare/showroom</p>
         </li>
         <li>
-          <a href="../../livrare.html">Livrare</a>
+          <p>Livrare gratuita la comenzi peste 249 Lei</p>
         </li>
       </ul>
     </div>
-    <div class="col-footer">
+    <div class=" col-footer">
       <h1 style="margin:0; font-size:20px">Informatii de contact</h1>
       <hr>
       <ul>
@@ -170,8 +172,8 @@
     </div>
   </footer>
 
-
   <script src="../../../js/comandaprodus.js"></script>
+  <script src="../../../js/searchbar.js"></script>
 </body>
 
 </html>

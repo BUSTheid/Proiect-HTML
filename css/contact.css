@@ -8,10 +8,11 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  gap: 40px;
 }
 
 .cic1 {
-  width: 59%;
+  width: 60%;
 }
 
 .cic2 {
